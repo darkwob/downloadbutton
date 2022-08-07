@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Button with Progress bar</title>
+    <link rel="stylesheet" href="style.css">
+    <!--BoxIcons CDN Link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+</head>
+
+<body>
+    <div class="button">
+        <div class="content">
+            <i class="bx bx-cloud-download"></i>
+            <span class="button-text">
+            İndir
+        </span>
+        </div>
+    </div>
+
+    <script>
+        let button = document.querySelector(".button");
+        button.addEventListener("click", () => {
+            button.classList.add("active");
+            setTimeout(() => {
+                button.classList.remove("active"); //remove active class 6s after
+                button.querySelector("i").classList.replace("bx-cloud-download", "bx-check-circle")
+                button.querySelector("span").innerHTML = "Tamamlandı";
+
+            }, 2000);
+        })
+        setTimeout(() => {
+            d
+        }, 200);
+    </script>
+</body>
+
+</html>
